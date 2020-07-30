@@ -32,9 +32,9 @@ Partial Class Form1
         Me.optResta = New System.Windows.Forms.RadioButton()
         Me.optMultiplicar = New System.Windows.Forms.RadioButton()
         Me.optDividir = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.optPorcentaje = New System.Windows.Forms.RadioButton()
+        Me.optexponente = New System.Windows.Forms.RadioButton()
+        Me.optResiduo = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'lblnum1
@@ -132,44 +132,44 @@ Partial Class Form1
         Me.optDividir.Text = "/"
         Me.optDividir.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'optPorcentaje
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(162, 111)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(76, 17)
-        Me.RadioButton1.TabIndex = 10
-        Me.RadioButton1.Text = "Porcentaje"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.optPorcentaje.AutoSize = True
+        Me.optPorcentaje.Location = New System.Drawing.Point(162, 111)
+        Me.optPorcentaje.Name = "optPorcentaje"
+        Me.optPorcentaje.Size = New System.Drawing.Size(76, 17)
+        Me.optPorcentaje.TabIndex = 10
+        Me.optPorcentaje.Text = "Porcentaje"
+        Me.optPorcentaje.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'optexponente
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(162, 134)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(31, 17)
-        Me.RadioButton2.TabIndex = 11
-        Me.RadioButton2.Text = "^"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.optexponente.AutoSize = True
+        Me.optexponente.Location = New System.Drawing.Point(162, 134)
+        Me.optexponente.Name = "optexponente"
+        Me.optexponente.Size = New System.Drawing.Size(31, 17)
+        Me.optexponente.TabIndex = 11
+        Me.optexponente.Text = "^"
+        Me.optexponente.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'optResiduo
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(162, 157)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(64, 17)
-        Me.RadioButton3.TabIndex = 12
-        Me.RadioButton3.Text = "Residuo"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.optResiduo.AutoSize = True
+        Me.optResiduo.Location = New System.Drawing.Point(162, 157)
+        Me.optResiduo.Name = "optResiduo"
+        Me.optResiduo.Size = New System.Drawing.Size(64, 17)
+        Me.optResiduo.TabIndex = 12
+        Me.optResiduo.Text = "Residuo"
+        Me.optResiduo.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(464, 262)
-        Me.Controls.Add(Me.RadioButton3)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.optResiduo)
+        Me.Controls.Add(Me.optexponente)
+        Me.Controls.Add(Me.optPorcentaje)
         Me.Controls.Add(Me.optDividir)
         Me.Controls.Add(Me.optMultiplicar)
         Me.Controls.Add(Me.optResta)
@@ -200,7 +200,7 @@ Partial Class Form1
     Friend WithEvents optResta As RadioButton
     Friend WithEvents optMultiplicar As RadioButton
     Friend WithEvents optDividir As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents optPorcentaje As RadioButton
+    Friend WithEvents optexponente As RadioButton
+    Friend WithEvents optResiduo As RadioButton
 End Class

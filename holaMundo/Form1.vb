@@ -21,5 +21,22 @@
         If optDividir.Checked Then
             lblrespuesta.Text = num1 / num2 'realizamos la division
         End If
+
+        If optPorcentaje.Checked Then
+            lblrespuesta.Text = num1 * num2 / 100 'calcula el porcentaje ingresado
+        End If
+
+        If optexponente.Checked Then
+            lblrespuesta.Text = num1 ^ num2 'lo eleva al exponente que deseamos
+        End If
+
+        If optResiduo.Checked Then
+            lblrespuesta.Text = num1 Mod num2 'divison entera que da el residuo
+        End If
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

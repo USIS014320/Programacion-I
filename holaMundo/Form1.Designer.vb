@@ -35,6 +35,7 @@ Partial Class Form1
         Me.optPorcentaje = New System.Windows.Forms.RadioButton()
         Me.optexponente = New System.Windows.Forms.RadioButton()
         Me.optResiduo = New System.Windows.Forms.RadioButton()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'lblnum1
@@ -162,11 +163,20 @@ Partial Class Form1
         Me.optResiduo.Text = "Residuo"
         Me.optResiduo.UseVisualStyleBackColor = True
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(285, 111)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 13
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(464, 262)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.optResiduo)
         Me.Controls.Add(Me.optexponente)
         Me.Controls.Add(Me.optPorcentaje)
@@ -203,4 +213,5 @@ Partial Class Form1
     Friend WithEvents optPorcentaje As RadioButton
     Friend WithEvents optexponente As RadioButton
     Friend WithEvents optResiduo As RadioButton
+    Friend WithEvents ComboBox1 As ComboBox
 End Class

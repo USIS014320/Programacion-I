@@ -22,174 +22,43 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblnum1 = New System.Windows.Forms.Label()
-        Me.txtnum1 = New System.Windows.Forms.TextBox()
-        Me.btnCalcular = New System.Windows.Forms.Button()
-        Me.lblnum2 = New System.Windows.Forms.Label()
-        Me.txtnum2 = New System.Windows.Forms.TextBox()
-        Me.lblrespuesta = New System.Windows.Forms.Label()
-        Me.optSuma = New System.Windows.Forms.RadioButton()
-        Me.optResta = New System.Windows.Forms.RadioButton()
-        Me.optMultiplicar = New System.Windows.Forms.RadioButton()
-        Me.optDividir = New System.Windows.Forms.RadioButton()
-        Me.optPorcentaje = New System.Windows.Forms.RadioButton()
-        Me.optexponente = New System.Windows.Forms.RadioButton()
-        Me.optResiduo = New System.Windows.Forms.RadioButton()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
-        'lblnum1
+        'ListBox1
         '
-        Me.lblnum1.AutoSize = True
-        Me.lblnum1.Location = New System.Drawing.Point(38, 46)
-        Me.lblnum1.Name = "lblnum1"
-        Me.lblnum1.Size = New System.Drawing.Size(41, 13)
-        Me.lblnum1.TabIndex = 0
-        Me.lblnum1.Text = "Num 1:"
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(273, 12)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(121, 173)
+        Me.ListBox1.TabIndex = 0
         '
-        'txtnum1
+        'Button1
         '
-        Me.txtnum1.Location = New System.Drawing.Point(85, 43)
-        Me.txtnum1.Name = "txtnum1"
-        Me.txtnum1.Size = New System.Drawing.Size(56, 20)
-        Me.txtnum1.TabIndex = 1
+        Me.Button1.Location = New System.Drawing.Point(128, 170)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(109, 50)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
-        'btnCalcular
+        'TextBox1
         '
-        Me.btnCalcular.Location = New System.Drawing.Point(127, 194)
-        Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(92, 33)
-        Me.btnCalcular.TabIndex = 2
-        Me.btnCalcular.Text = "Calcular"
-        Me.btnCalcular.UseVisualStyleBackColor = True
-        '
-        'lblnum2
-        '
-        Me.lblnum2.AutoSize = True
-        Me.lblnum2.Location = New System.Drawing.Point(195, 46)
-        Me.lblnum2.Name = "lblnum2"
-        Me.lblnum2.Size = New System.Drawing.Size(41, 13)
-        Me.lblnum2.TabIndex = 3
-        Me.lblnum2.Text = "Num 2:"
-        '
-        'txtnum2
-        '
-        Me.txtnum2.Location = New System.Drawing.Point(240, 43)
-        Me.txtnum2.Name = "txtnum2"
-        Me.txtnum2.Size = New System.Drawing.Size(56, 20)
-        Me.txtnum2.TabIndex = 4
-        '
-        'lblrespuesta
-        '
-        Me.lblrespuesta.AutoSize = True
-        Me.lblrespuesta.Location = New System.Drawing.Point(302, 46)
-        Me.lblrespuesta.Name = "lblrespuesta"
-        Me.lblrespuesta.Size = New System.Drawing.Size(70, 13)
-        Me.lblrespuesta.TabIndex = 5
-        Me.lblrespuesta.Text = "Respuesta: ?"
-        '
-        'optSuma
-        '
-        Me.optSuma.AutoSize = True
-        Me.optSuma.Checked = True
-        Me.optSuma.Location = New System.Drawing.Point(161, 19)
-        Me.optSuma.Name = "optSuma"
-        Me.optSuma.Size = New System.Drawing.Size(31, 17)
-        Me.optSuma.TabIndex = 6
-        Me.optSuma.TabStop = True
-        Me.optSuma.Text = "+"
-        Me.optSuma.UseVisualStyleBackColor = True
-        '
-        'optResta
-        '
-        Me.optResta.AutoSize = True
-        Me.optResta.Location = New System.Drawing.Point(161, 42)
-        Me.optResta.Name = "optResta"
-        Me.optResta.Size = New System.Drawing.Size(28, 17)
-        Me.optResta.TabIndex = 7
-        Me.optResta.TabStop = True
-        Me.optResta.Text = "-"
-        Me.optResta.UseVisualStyleBackColor = True
-        '
-        'optMultiplicar
-        '
-        Me.optMultiplicar.AutoSize = True
-        Me.optMultiplicar.Location = New System.Drawing.Point(161, 65)
-        Me.optMultiplicar.Name = "optMultiplicar"
-        Me.optMultiplicar.Size = New System.Drawing.Size(29, 17)
-        Me.optMultiplicar.TabIndex = 8
-        Me.optMultiplicar.TabStop = True
-        Me.optMultiplicar.Text = "*"
-        Me.optMultiplicar.UseVisualStyleBackColor = True
-        '
-        'optDividir
-        '
-        Me.optDividir.AutoSize = True
-        Me.optDividir.Location = New System.Drawing.Point(161, 88)
-        Me.optDividir.Name = "optDividir"
-        Me.optDividir.Size = New System.Drawing.Size(30, 17)
-        Me.optDividir.TabIndex = 9
-        Me.optDividir.TabStop = True
-        Me.optDividir.Text = "/"
-        Me.optDividir.UseVisualStyleBackColor = True
-        '
-        'optPorcentaje
-        '
-        Me.optPorcentaje.AutoSize = True
-        Me.optPorcentaje.Location = New System.Drawing.Point(162, 111)
-        Me.optPorcentaje.Name = "optPorcentaje"
-        Me.optPorcentaje.Size = New System.Drawing.Size(76, 17)
-        Me.optPorcentaje.TabIndex = 10
-        Me.optPorcentaje.Text = "Porcentaje"
-        Me.optPorcentaje.UseVisualStyleBackColor = True
-        '
-        'optexponente
-        '
-        Me.optexponente.AutoSize = True
-        Me.optexponente.Location = New System.Drawing.Point(162, 134)
-        Me.optexponente.Name = "optexponente"
-        Me.optexponente.Size = New System.Drawing.Size(31, 17)
-        Me.optexponente.TabIndex = 11
-        Me.optexponente.Text = "^"
-        Me.optexponente.UseVisualStyleBackColor = True
-        '
-        'optResiduo
-        '
-        Me.optResiduo.AutoSize = True
-        Me.optResiduo.Location = New System.Drawing.Point(162, 157)
-        Me.optResiduo.Name = "optResiduo"
-        Me.optResiduo.Size = New System.Drawing.Size(64, 17)
-        Me.optResiduo.TabIndex = 12
-        Me.optResiduo.Text = "Residuo"
-        Me.optResiduo.UseVisualStyleBackColor = True
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(285, 111)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 13
+        Me.TextBox1.Location = New System.Drawing.Point(120, 38)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(96, 20)
+        Me.TextBox1.TabIndex = 2
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(464, 262)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.optResiduo)
-        Me.Controls.Add(Me.optexponente)
-        Me.Controls.Add(Me.optPorcentaje)
-        Me.Controls.Add(Me.optDividir)
-        Me.Controls.Add(Me.optMultiplicar)
-        Me.Controls.Add(Me.optResta)
-        Me.Controls.Add(Me.optSuma)
-        Me.Controls.Add(Me.lblrespuesta)
-        Me.Controls.Add(Me.txtnum2)
-        Me.Controls.Add(Me.lblnum2)
-        Me.Controls.Add(Me.btnCalcular)
-        Me.Controls.Add(Me.txtnum1)
-        Me.Controls.Add(Me.lblnum1)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ListBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -200,18 +69,7 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents lblnum1 As Label
-    Friend WithEvents txtnum1 As TextBox
-    Friend WithEvents btnCalcular As Button
-    Friend WithEvents lblnum2 As Label
-    Friend WithEvents txtnum2 As TextBox
-    Friend WithEvents lblrespuesta As Label
-    Friend WithEvents optSuma As RadioButton
-    Friend WithEvents optResta As RadioButton
-    Friend WithEvents optMultiplicar As RadioButton
-    Friend WithEvents optDividir As RadioButton
-    Friend WithEvents optPorcentaje As RadioButton
-    Friend WithEvents optexponente As RadioButton
-    Friend WithEvents optResiduo As RadioButton
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents TextBox1 As TextBox
 End Class

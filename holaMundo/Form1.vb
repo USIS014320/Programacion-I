@@ -447,5 +447,366 @@
                     End If
                 End If
         End Select
+
+
+    End Sub
+
+    Private Sub btnConvertir_Click(sender As Object, e As EventArgs) Handles btnConvertir.Click
+        Dim m1, m2 As Int64
+
+        m1 = cboDe.SelectedIndex
+        m2 = cboA.SelectedIndex
+
+        If m1 = 0 And m2 = 1 Then
+            txtrespuestab.Text = txtEntradab.Text * 2.205
+        Else
+            If m1 = 0 And m2 = 2 Then
+                txtrespuestab.Text = txtEntradab.Text * 35.274
+            Else
+                If m1 = 0 And m2 = 3 Then
+                    txtrespuestab.Text = txtEntradab.Text / 100
+                Else
+                    If m1 = 0 And m2 = 4 Then
+                        txtrespuestab.Text = txtEntradab.Text / 1000
+                    Else
+                        If m1 = 0 And m2 = 5 Then
+                            txtrespuestab.Text = txtEntradab.Text / 25
+                        Else
+                            If m1 = 0 And m2 = 6 Then
+                                txtrespuestab.Text = txtEntradab.Text * 1000
+                            Else
+                                If m1 = 0 And m2 = 7 Then
+                                    txtrespuestab.Text = txtEntradab.Text * 1000000.0
+                                Else
+                                    If m1 = 0 And m2 = 8 Then
+                                        txtrespuestab.Text = txtEntradab.Text * 1000000000.0
+                                    Else
+                                        If m1 = 0 And m2 = 9 Then
+                                            txtrespuestab.Text = txtEntradab.Text * 5000
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            End If
+        End If
+        If m1 = 1 And m2 = 0 Then
+            txtrespuestab.Text = txtEntradab.Text / 2.205
+        Else
+            If m1 = 1 And m2 = 2 Then
+                txtrespuestab.Text = txtEntradab.Text * 16
+            Else
+                If m1 = 1 And m2 = 3 Then
+                    txtrespuestab.Text = txtEntradab.Text / 220
+                Else
+                    If m1 = 1 And m2 = 4 Then
+                        txtrespuestab.Text = txtEntradab.Text / 2205
+                    Else
+                        If m1 = 1 And m2 = 5 Then
+                            txtrespuestab.Text = txtEntradab.Text / 25
+                        Else
+                            If m1 = 1 And m2 = 6 Then
+                                txtrespuestab.Text = txtEntradab.Text * 454
+                            Else
+                                If m1 = 1 And m2 = 7 Then
+                                    txtrespuestab.Text = txtEntradab.Text * 453592
+                                Else
+                                    If m1 = 1 And m2 = 8 Then
+                                        txtrespuestab.Text = txtEntradab.Text * 453600000.0
+                                    Else
+                                        If m1 = 1 And m2 = 9 Then
+                                            txtrespuestab.Text = txtEntradab.Text * 2268
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            End If
+        End If
+        If m1 = 2 And m2 = 0 Then
+            txtrespuestab.Text = txtEntradab.Text / 35.274
+        Else
+            If m1 = 2 And m2 = 1 Then
+                txtrespuestab.Text = txtEntradab.Text / 16
+            Else
+                If m1 = 2 And m2 = 3 Then
+                    txtrespuestab.Text = txtEntradab.Text / 3527
+                Else
+                    If m1 = 2 And m2 = 4 Then
+                        txtrespuestab.Text = txtEntradab.Text / 35274
+                    Else
+                        If m1 = 2 And m2 = 5 Then
+                            txtrespuestab.Text = txtEntradab.Text / 25
+                        Else
+                            If m1 = 2 And m2 = 6 Then
+                                txtrespuestab.Text = txtEntradab.Text * 28.35
+                            Else
+                                If m1 = 2 And m2 = 7 Then
+                                    txtrespuestab.Text = txtEntradab.Text * 28350
+                                Else
+                                    If m1 = 2 And m2 = 8 Then
+                                        txtrespuestab.Text = txtEntradab.Text * 28350000.0
+                                    Else
+                                        If m1 = 2 And m2 = 9 Then
+                                            txtrespuestab.Text = txtEntradab.Text * 142
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            End If
+        End If
+        If m1 = 3 And m2 = 0 Then
+            txtrespuestab.Text = txtEntradab.Text * 100
+        Else
+            If m1 = 3 And m2 = 1 Then
+                txtrespuestab.Text = txtEntradab.Text * 220
+            Else
+                If m1 = 3 And m2 = 2 Then
+                    txtrespuestab.Text = txtEntradab.Text * 3527
+                Else
+                    If m1 = 3 And m2 = 4 Then
+                        txtrespuestab.Text = txtEntradab.Text / 10
+                    Else
+                        If m1 = 3 And m2 = 5 Then
+                            txtrespuestab.Text = txtEntradab.Text / 25
+                        Else
+                            If m1 = 3 And m2 = 6 Then
+                                txtrespuestab.Text = txtEntradab.Text * 100000
+                            Else
+                                If m1 = 3 And m2 = 7 Then
+                                    txtrespuestab.Text = txtEntradab.Text * 100000000.0
+                                Else
+                                    If m1 = 3 And m2 = 8 Then
+                                        txtrespuestab.Text = txtEntradab.Text * 100000000000.0
+                                    Else
+                                        If m1 = 3 And m2 = 9 Then
+                                            txtrespuestab.Text = txtEntradab.Text * 142
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            End If
+        End If
+        If m1 = 4 And m2 = 0 Then
+            txtrespuestab.Text = txtEntradab.Text * 1000
+        Else
+            If m1 = 4 And m2 = 1 Then
+                txtrespuestab.Text = txtEntradab.Text * 2205
+            Else
+                If m1 = 4 And m2 = 2 Then
+                    txtrespuestab.Text = txtEntradab.Text * 35274
+                Else
+                    If m1 = 4 And m2 = 3 Then
+                        txtrespuestab.Text = txtEntradab.Text * 10
+                    Else
+                        If m1 = 4 And m2 = 5 Then
+                            txtrespuestab.Text = txtEntradab.Text / 25
+                        Else
+                            If m1 = 4 And m2 = 6 Then
+                                txtrespuestab.Text = txtEntradab.Text * 1000000.0
+                            Else
+                                If m1 = 4 And m2 = 7 Then
+                                    txtrespuestab.Text = txtEntradab.Text * 1000000000.0
+                                Else
+                                    If m1 = 4 And m2 = 8 Then
+                                        txtrespuestab.Text = txtEntradab.Text * 1000000000000.0
+                                    Else
+                                        If m1 = 4 And m2 = 9 Then
+                                            txtrespuestab.Text = txtEntradab.Text * 5000000.0
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            End If
+        End If
+        If m1 = 5 And m2 = 0 Then
+            txtrespuestab.Text = txtEntradab.Text * 1000
+        Else
+            If m1 = 5 And m2 = 1 Then
+                txtrespuestab.Text = txtEntradab.Text * 2205
+            Else
+                If m1 = 5 And m2 = 2 Then
+                    txtrespuestab.Text = txtEntradab.Text * 35274
+                Else
+                    If m1 = 5 And m2 = 3 Then
+                        txtrespuestab.Text = txtEntradab.Text * 10
+                    Else
+                        If m1 = 5 And m2 = 4 Then
+                            txtrespuestab.Text = txtEntradab.Text / 25
+                        Else
+                            If m1 = 5 And m2 = 6 Then
+                                txtrespuestab.Text = txtEntradab.Text * 1000000.0
+                            Else
+                                If m1 = 5 And m2 = 7 Then
+                                    txtrespuestab.Text = txtEntradab.Text * 1000000000.0
+                                Else
+                                    If m1 = 5 And m2 = 8 Then
+                                        txtrespuestab.Text = txtEntradab.Text * 1000000000000.0
+                                    Else
+                                        If m1 = 5 And m2 = 9 Then
+                                            txtrespuestab.Text = txtEntradab.Text * 5000000.0
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            End If
+        End If
+        If m1 = 6 And m2 = 0 Then
+            txtrespuestab.Text = txtEntradab.Text / 1000
+        Else
+            If m1 = 6 And m2 = 1 Then
+                txtrespuestab.Text = txtEntradab.Text / 454
+            Else
+                If m1 = 6 And m2 = 2 Then
+                    txtrespuestab.Text = txtEntradab.Text / 28.35
+                Else
+                    If m1 = 6 And m2 = 3 Then
+                        txtrespuestab.Text = txtEntradab.Text * 10
+                    Else
+                        If m1 = 6 And m2 = 4 Then
+                            txtrespuestab.Text = txtEntradab.Text / 10
+                        Else
+                            If m1 = 6 And m2 = 5 Then
+                                txtrespuestab.Text = txtEntradab.Text / 25
+                            Else
+                                If m1 = 6 And m2 = 7 Then
+                                    txtrespuestab.Text = txtEntradab.Text * 100000000.0
+                                Else
+                                    If m1 = 6 And m2 = 8 Then
+                                        txtrespuestab.Text = txtEntradab.Text * 100000000000.0
+                                    Else
+                                        If m1 = 6 And m2 = 9 Then
+                                            txtrespuestab.Text = txtEntradab.Text * 5
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            End If
+        End If
+        If m1 = 7 And m2 = 0 Then
+            txtrespuestab.Text = txtEntradab.Text / 1000000.0
+        Else
+            If m1 = 7 And m2 = 1 Then
+                txtrespuestab.Text = txtEntradab.Text / 453592
+            Else
+                If m1 = 7 And m2 = 2 Then
+                    txtrespuestab.Text = txtEntradab.Text / 28350
+                Else
+                    If m1 = 7 And m2 = 3 Then
+                        txtrespuestab.Text = txtEntradab.Text / 100000000.0
+                    Else
+                        If m1 = 7 And m2 = 4 Then
+                            txtrespuestab.Text = txtEntradab.Text / 1000000000.0
+                        Else
+                            If m1 = 7 And m2 = 5 Then
+                                txtrespuestab.Text = txtEntradab.Text / 11.3398
+                            Else
+                                If m1 = 7 And m2 = 6 Then
+                                    txtrespuestab.Text = txtEntradab.Text / 1000
+                                Else
+                                    If m1 = 7 And m2 = 8 Then
+                                        txtrespuestab.Text = txtEntradab.Text * 1000
+                                    Else
+                                        If m1 = 7 And m2 = 9 Then
+                                            txtrespuestab.Text = txtEntradab.Text / 200
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            End If
+        End If
+        If m1 = 8 And m2 = 0 Then
+            txtrespuestab.Text = txtEntradab.Text / 1000000000.0
+        Else
+            If m1 = 8 And m2 = 1 Then
+                txtrespuestab.Text = txtEntradab.Text / 453600000.0
+            Else
+                If m1 = 8 And m2 = 2 Then
+                    txtrespuestab.Text = txtEntradab.Text / 28350000.0
+                Else
+                    If m1 = 8 And m2 = 3 Then
+                        txtrespuestab.Text = txtEntradab.Text / 100000000000.0
+                    Else
+                        If m1 = 8 And m2 = 4 Then
+                            txtrespuestab.Text = txtEntradab.Text / 1000000000000.0
+                        Else
+                            If m1 = 8 And m2 = 5 Then
+                                txtrespuestab.Text = txtEntradab.Text * 453600000.0
+                            Else
+                                If m1 = 8 And m2 = 6 Then
+                                    txtrespuestab.Text = txtEntradab.Text / 1000000.0
+
+                                Else
+                                    If m1 = 8 And m2 = 7 Then
+                                        txtrespuestab.Text = txtEntradab.Text / 1000
+                                    Else
+                                        If m1 = 8 And m2 = 9 Then
+                                            txtrespuestab.Text = txtEntradab.Text / 200000
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            End If
+        End If
+        If m1 = 9 And m2 = 0 Then
+            txtrespuestab.Text = txtEntradab.Text / 5000
+        Else
+            If m1 = 9 And m2 = 1 Then
+                txtrespuestab.Text = txtEntradab.Text / 2268
+            Else
+                If m1 = 9 And m2 = 2 Then
+                    txtrespuestab.Text = txtEntradab.Text / 142
+                Else
+                    If m1 = 9 And m2 = 3 Then
+                        txtrespuestab.Text = txtEntradab.Text / 500000
+                    Else
+                        If m1 = 9 And m2 = 4 Then
+                            txtrespuestab.Text = txtEntradab.Text / 5000000.0
+                        Else
+                            If m1 = 9 And m2 = 5 Then
+                                txtrespuestab.Text = txtEntradab.Text * 2268
+                            Else
+                                If m1 = 9 And m2 = 6 Then
+                                    txtrespuestab.Text = txtEntradab.Text / 5
+                                Else
+                                    If m1 = 9 And m2 = 7 Then
+                                        txtrespuestab.Text = txtEntradab.Text * 200
+                                    Else
+                                        If m1 = 9 And m2 = 8 Then
+                                            txtrespuestab.Text = txtEntradab.Text * 200000
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        End If
+                    End If
+                End If
+            End If
+        End If
     End Sub
 End Class

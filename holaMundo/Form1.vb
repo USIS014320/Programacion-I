@@ -1,7 +1,7 @@
 ﻿Public Class Form1
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
         'Dim es una palabra reservada para declarar una variable
-        Dim num1, num2, respuesta As Double 'Declaro las variables en linea separadas por comas del mismo tipo
+        Dim num1, num2 As Double 'Declaro las variables en linea separadas por comas del mismo tipo
 
         num1 = txtnum1.Text 'capturando el dato que ingres el usuario a la caja de texto, asigno dicho valor a la variable num1.
         num2 = txtnum2.Text

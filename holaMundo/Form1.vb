@@ -1,7 +1,7 @@
 ﻿Public Class Form1
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
         'Dim es una palabra reservada para declarar una variable
-        Dim num1, num2, respuesta As Double 'Declaro las variables en linea separadas por comas del mismo tipo
+        Dim num1, num2 As Double 'Declaro las variables en linea separadas por comas del mismo tipo
 
         num1 = txtnum1.Text 'capturando el dato que ingres el usuario a la caja de texto, asigno dicho valor a la variable num1.
         num2 = txtnum2.Text
@@ -34,24 +34,7 @@
             lblrespuesta.Text = num1 Mod num2 'divison entera que da el residuo
         End If
 
-        Select Case cboOperaciones.SelectedIndex
-            Case 1
-                lblrespuesta.Text = num1 + num2
-            Case 2
-                lblrespuesta.Text = num1 - num2
-            Case 3
-                lblrespuesta.Text = num1 * num2
-            Case 4
-                lblrespuesta.Text = num1 / num2
-
-        End Select
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
-
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboOperaciones.SelectedIndexChanged
-
-    End Sub
 End Class
